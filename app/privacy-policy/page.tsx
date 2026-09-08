@@ -20,7 +20,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="text-xs text-charcoal/50 uppercase tracking-wider mb-8 pb-4 border-b border-charcoal/10">
-            Last Updated: March 2025 · {SITE_NAME}
+            Last Updated: September 2026 · {SITE_NAME}
           </p>
 
           <div className="space-y-6 text-xs sm:text-sm text-charcoal/80 leading-relaxed">
