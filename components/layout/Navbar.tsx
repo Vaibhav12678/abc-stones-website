@@ -35,23 +35,22 @@ export default function Navbar() {
         )}
       >
         <Container className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2.5 sm:gap-3.5 group">
-            <div className="relative h-10 w-[55px] sm:h-12 sm:w-[66px] shrink-0 transition-transform duration-300 group-hover:scale-105">
+          <Link href="/" className="flex items-end gap-2.5 sm:gap-3.5 group">
+            <div className="relative h-10 w-[55px] sm:h-11 sm:w-[60px] md:h-12 md:w-[66px] shrink-0 transition-transform duration-300 group-hover:scale-105">
               <Image
                 src="/logo/logo.png"
                 alt={SITE_NAME}
                 fill
                 sizes="(max-width: 640px) 55px, 66px"
-                className="object-contain object-center"
+                className="object-contain object-bottom"
                 priority
-                unoptimized
               />
             </div>
-            <div className="flex flex-col justify-center self-center pt-1 sm:pt-0.5">
-              <span className="font-serif text-[0.72rem] sm:text-xs md:text-sm font-semibold tracking-wider text-charcoal leading-snug transition-colors duration-300">
+            <div className="flex flex-col justify-end pb-[1px] sm:pb-[1.5px]">
+              <span className="font-serif text-[0.72rem] sm:text-xs md:text-sm font-semibold tracking-wider text-charcoal leading-tight transition-colors duration-300">
                 ABC <span className="text-gold font-bold">STONES</span> INDIA PVT. LTD.
               </span>
-              <span className="text-[0.42rem] sm:text-[0.5rem] tracking-[0.22em] text-gold uppercase font-medium leading-none mt-0.5">
+              <span className="text-[0.42rem] sm:text-[0.5rem] tracking-[0.22em] text-gold uppercase font-medium leading-none mt-1 sm:mt-1.5">
                 Premium Natural Stone
               </span>
             </div>

@@ -62,11 +62,10 @@ export default function AboutPage() {
           <div className="lg:col-span-6 relative">
             <div className="relative aspect-[16/10] sm:aspect-[4/3] w-full overflow-hidden border border-charcoal/15 shadow-xl bg-beige">
               <Image
-                src="/images/about/showroom-facade.jpg"
+                src="/images/about/story.webp"
                 alt={`${SITE_NAME} stone heritage and facility`}
                 fill
                 priority
-                unoptimized
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />

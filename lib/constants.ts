@@ -20,8 +20,8 @@ export const ADDRESS_LINES = [
   "Rajasthan 305801",
 ];
 
-// Configurable Google Maps direction link
-export const GOOGLE_MAPS_LINK = "https://maps.google.com/?q=Plot+No.+9B,+9A,+Ralawata,+Kishangarh,+Rajasthan+305801";
+// Google Maps business listing / direction link
+export const GOOGLE_MAPS_LINK = "https://share.google/9ExlLqKoX485JFPoB";
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },

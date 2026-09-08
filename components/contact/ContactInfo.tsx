@@ -1,5 +1,5 @@
 import { Phone, MapPin, MessageCircle, Mail, Instagram } from "lucide-react";
-import { PHONE_NUMBERS, ADDRESS_LINES, SITE_NAME, PRIMARY_PHONE, PRIMARY_EMAIL, INSTAGRAM_HANDLE, INSTAGRAM_URL } from "@/lib/constants";
+import { PHONE_NUMBERS, ADDRESS_LINES, SITE_NAME, PRIMARY_PHONE, PRIMARY_EMAIL, INSTAGRAM_HANDLE, INSTAGRAM_URL, GOOGLE_MAPS_LINK } from "@/lib/constants";
 import { getCallLink, getWhatsappLink } from "@/lib/whatsapp";
 import Divider from "@/components/ui/Divider";
 
@@ -97,6 +97,14 @@ export default function ContactInfo() {
             <p className="text-charcoal/80 leading-relaxed">
               {ADDRESS_LINES.join(" ")}
             </p>
+            <a
+              href={GOOGLE_MAPS_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-xs text-gold hover:underline mt-2 font-medium tracking-wide"
+            >
+              Get Directions &rarr;
+            </a>
           </div>
         </div>
       </div>

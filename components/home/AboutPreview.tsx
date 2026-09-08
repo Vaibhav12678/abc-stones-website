@@ -16,11 +16,10 @@ export default function AboutPreview() {
           <div className="lg:col-span-6 relative">
             <div className="relative aspect-[16/11] sm:aspect-[4/3] w-full overflow-hidden border border-charcoal/10 shadow-xl">
               <Image
-                src="/images/about/showroom-facade.jpg"
+                src="/images/about/showroom-facade.webp"
                 alt={`${SITE_NAME} — architectural facility and stone expertise`}
                 fill
                 priority
-                unoptimized
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />

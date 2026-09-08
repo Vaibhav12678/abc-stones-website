@@ -21,10 +21,9 @@ export default function Story() {
         </div>
         <div className="relative aspect-[16/10] w-full overflow-hidden border border-charcoal/15 shadow-xl bg-beige">
           <Image
-            src="/images/about/showroom-facade.jpg"
+            src="/images/about/story.webp"
             alt="ABC STONES INDIA PVT. LTD. — architectural facility"
             fill
-            unoptimized
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"
           />

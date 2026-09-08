@@ -24,21 +24,21 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 pb-12">
           {/* Brand & Mission */}
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-flex items-center gap-3.5 mb-4 group">
+            <Link href="/" className="inline-flex items-end gap-3.5 mb-4 group">
               <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 transition-transform duration-300 group-hover:scale-105">
                 <Image
                   src="/logo/logo.png"
                   alt={SITE_NAME}
                   fill
                   sizes="64px"
-                  className="object-contain"
+                  className="object-contain object-bottom"
                 />
               </div>
-              <div className="flex flex-col leading-tight justify-center">
+              <div className="flex flex-col leading-tight justify-end pb-1">
                 <span className="font-serif text-sm sm:text-base text-cream tracking-wide block group-hover:text-gold transition-colors font-semibold">
                   ABC <span className="text-gold font-bold">STONES</span> INDIA PVT. LTD.
                 </span>
-                <span className="text-[0.48rem] sm:text-[0.52rem] tracking-[0.24em] text-gold uppercase mt-1 font-medium">
+                <span className="text-[0.48rem] sm:text-[0.52rem] tracking-[0.24em] text-gold uppercase mt-1.5 font-medium">
                   Premium Natural Stone
                 </span>
               </div>
