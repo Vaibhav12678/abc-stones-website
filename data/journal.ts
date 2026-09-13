@@ -20,7 +20,7 @@ export const journalArticles: JournalArticle[] = [
     title: "Italian Marble: Complete Buying Guide",
     subtitle: "Everything architects, designers, and homeowners need to know before investing in genuine Italian natural stone.",
     excerpt: "From Carrara to Statuario, learn how Italian marble is quarried, graded, finished, and specified for world-class residential and commercial interiors.",
-    date: "2025-01-15",
+    date: "2026-08-15",
     readTime: "6 min read",
     category: "Buying Guide",
     image: "/images/marble/statuario.webp",
