@@ -34,23 +34,23 @@ export default function Navbar() {
             : "bg-[#FAF8F3]/80 backdrop-blur-sm border-b border-charcoal/5 py-3.5 sm:py-4"
         )}
       >
-        <Container className="flex items-center justify-between">
-          <Link href="/" className="flex items-end gap-2.5 sm:gap-3.5 group">
-            <div className="relative h-10 w-[55px] sm:h-11 sm:w-[60px] md:h-12 md:w-[66px] shrink-0 transition-transform duration-300 group-hover:scale-105">
+        <Container className="flex items-center justify-between px-3.5 sm:px-6 md:px-10 lg:px-16">
+          <Link href="/" className="flex items-end gap-2.5 sm:gap-3.5 group shrink-0">
+            <div className="relative h-10 w-[55px] sm:h-11 sm:w-[60px] md:h-12 md:w-[66px] lg:h-[52px] lg:w-[70px] shrink-0 transition-transform duration-300 group-hover:scale-105">
               <Image
                 src="/logo/logo.png"
                 alt={SITE_NAME}
                 fill
-                sizes="(max-width: 640px) 55px, 66px"
+                sizes="(max-width: 640px) 55px, (max-width: 1024px) 66px, 70px"
                 className="object-contain object-bottom"
                 priority
               />
             </div>
-            <div className="flex flex-col justify-end pb-[1px] sm:pb-[1.5px]">
-              <span className="font-serif text-[0.72rem] sm:text-xs md:text-sm font-semibold tracking-wider text-charcoal leading-tight transition-colors duration-300">
+            <div className="flex flex-col justify-end pb-0.5 sm:pb-1">
+              <span className="font-serif text-[1rem] min-[370px]:text-[1.1rem] min-[410px]:text-[1.2rem] sm:text-[1.3rem] md:text-[1.42rem] lg:text-[1.58rem] font-semibold tracking-normal min-[370px]:tracking-[0.01em] sm:tracking-wide md:tracking-wider text-charcoal leading-tight transition-colors duration-300 whitespace-nowrap">
                 ABC <span className="text-gold font-bold">STONES</span> INDIA PVT. LTD.
               </span>
-              <span className="text-[0.42rem] sm:text-[0.5rem] tracking-[0.22em] text-gold uppercase font-medium leading-none mt-1 sm:mt-1.5">
+              <span className="text-[0.48rem] min-[370px]:text-[0.52rem] min-[410px]:text-[0.56rem] sm:text-[0.6rem] md:text-[0.66rem] lg:text-[0.72rem] tracking-[0.22em] text-gold uppercase font-medium leading-none mt-0.5 sm:mt-1">
                 Premium Natural Stone
               </span>
             </div>

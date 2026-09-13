@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Container from "@/components/ui/Container";
 import { useQuote } from "@/components/ui/QuoteContext";
@@ -16,46 +15,26 @@ export default function Hero() {
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Text Content */}
           <div className="lg:col-span-6 flex flex-col justify-center order-2 lg:order-1">
-            <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="flex items-center gap-2 mb-3"
-            >
+            <div className="flex items-center gap-2 mb-3">
               <span className="w-8 h-px bg-gold" />
               <p className="eyebrow text-gold text-[0.7rem] tracking-[0.22em] uppercase font-semibold">
                 Natural Stone Destination
               </p>
-            </motion.div>
+            </div>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-serif text-3xl sm:text-5xl md:text-6xl text-charcoal font-medium leading-[1.08] tracking-tight"
-            >
+            <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl text-charcoal font-medium leading-[1.08] tracking-tight">
               Premium Marble &amp; Granite
               <br />
               <span className="italic font-normal">for Exceptional Spaces</span>
-            </motion.h1>
+            </h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-4 sm:mt-6 text-sm sm:text-base text-charcoal/75 leading-relaxed max-w-lg"
-            >
+            <p className="mt-4 sm:mt-6 text-sm sm:text-base text-charcoal/75 leading-relaxed max-w-lg">
               Premium natural stone sourced for luxury homes, hospitality, architectural
               and commercial projects. Over three decades of stone expertise bringing timeless earth
               art into living architecture.
-            </motion.p>
+            </p>
 
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="mt-6 sm:mt-8 flex flex-wrap items-center gap-3 sm:gap-4"
-            >
+            <div className="mt-6 sm:mt-8 flex flex-wrap items-center gap-3 sm:gap-4">
               <Link
                 href="/collection"
                 className="inline-flex items-center gap-2 bg-[#11100F] text-[#FAF8F3] hover:bg-gold hover:text-charcoal px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.14em] transition-all duration-300"
@@ -71,30 +50,20 @@ export default function Hero() {
               >
                 GET A QUOTE
               </button>
-            </motion.div>
+            </div>
 
             {/* Quick trust strip under buttons */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="mt-8 pt-6 border-t border-charcoal/10 flex items-center gap-6 text-[0.72rem] text-charcoal/60 tracking-wider uppercase font-medium"
-            >
+            <div className="mt-8 pt-6 border-t border-charcoal/10 flex items-center gap-6 text-[0.72rem] text-charcoal/60 tracking-wider uppercase font-medium">
               <span>30+ Years Experience</span>
               <span className="w-1 h-1 rounded-full bg-gold" />
               <span>Slab &amp; Block</span>
               <span className="w-1 h-1 rounded-full bg-gold" />
               <span>Global Quarries</span>
-            </motion.div>
+            </div>
           </div>
 
           {/* Hero Visual */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.98 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.15 }}
-            className="lg:col-span-6 order-1 lg:order-2"
-          >
+          <div className="lg:col-span-6 order-1 lg:order-2">
             <div className="relative aspect-[4/3] sm:aspect-[4/3] lg:aspect-[5/4] w-full overflow-hidden shadow-xl border border-charcoal/10 group">
               <Image
                 src="/images/hero/Background.webp"
@@ -115,7 +84,7 @@ export default function Hero() {
                 </span>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </Container>
     </section>

@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+// Reload dev server
 const nextConfig = {
   compress: true,
   poweredByHeader: false,

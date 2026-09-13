@@ -1,11 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Container from "@/components/ui/Container";
 import TextDrop from "@/components/ui/TextDrop";
 import { SITE_NAME, ADDRESS_LINES, PRIMARY_PHONE, PHONE_NUMBERS, GOOGLE_MAPS_LINK } from "@/lib/constants";
 import { getCallLink, getWhatsappLink } from "@/lib/whatsapp";
-import { MapPin, Phone, Clock, MessageCircle, Navigation } from "lucide-react";
+import { MapPin, Phone, Clock, MessageCircle, Navigation, Play } from "lucide-react";
 
 export default function ShowroomPreview() {
   return (
@@ -93,23 +92,30 @@ export default function ShowroomPreview() {
             </div>
           </TextDrop>
 
-          {/* Visual Column */}
+          {/* Visual Column / Future Video Container */}
           <div className="lg:col-span-6 relative">
-            <div className="relative aspect-[4/3] w-full overflow-hidden border border-charcoal/10 shadow-lg">
-              <Image
-                src="/images/showroom/showroom-placeholder.jpg"
-                alt={`${SITE_NAME} — showroom and stone gallery under development`}
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-charcoal/10 to-transparent pointer-events-none" />
-              <div className="absolute bottom-4 left-4 right-4 bg-[#FAF8F3]/95 backdrop-blur-xs p-3.5 border border-charcoal/10">
-                <p className="text-[0.68rem] font-semibold text-charcoal tracking-wider uppercase">
+            <div className="relative aspect-[4/3] w-full overflow-hidden border border-charcoal/20 shadow-xl bg-[#11100F] flex flex-col items-center justify-center p-6 text-center">
+              <div className="flex flex-col items-center justify-center py-8">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border border-gold/40 bg-gold/10 flex items-center justify-center mb-3.5">
+                  <Play size={22} className="text-gold ml-0.5 fill-gold/20" />
+                </div>
+                <p className="eyebrow text-gold text-[0.68rem] tracking-[0.22em] uppercase font-semibold">
+                  Video Coming Soon
+                </p>
+                <h3 className="font-serif text-xl sm:text-2xl text-[#FAF8F3] font-medium tracking-wide mt-1">
+                  Showroom Walkthrough
+                </h3>
+                <p className="text-xs text-[#FAF8F3]/60 max-w-xs mt-1.5 leading-relaxed">
+                  Experiential facility &amp; architectural gallery video will be featured here.
+                </p>
+              </div>
+
+              <div className="absolute bottom-4 left-4 right-4 bg-black/80 backdrop-blur-xs p-3.5 border border-white/10 text-left">
+                <p className="text-[0.68rem] font-semibold text-cream tracking-wider uppercase">
                   Facility In Progress · Kishangarh, Rajasthan
                 </p>
-                <p className="text-[0.65rem] text-charcoal/70 mt-0.5">
-                  Visual render concept for our upcoming flagship display hub.
+                <p className="text-[0.65rem] text-cream/70 mt-0.5">
+                  Walkthrough video currently in production. Direct project consultations available.
                 </p>
               </div>
             </div>

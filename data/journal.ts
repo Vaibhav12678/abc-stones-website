@@ -111,7 +111,7 @@ export const journalArticles: JournalArticle[] = [
     readTime: "5 min read",
     category: "Buying Guide",
     image: "/images/hero/Background.webp",
-    relatedStoneSlugs: ["statuario-marble", "bhaswara-white", "black-pearl"],
+    relatedStoneSlugs: ["statuario-marble", "banswara-white", "black-pearl"],
     sections: [
       {
         heading: "What is a Natural Stone Block?",
@@ -137,7 +137,7 @@ export const journalArticles: JournalArticle[] = [
     readTime: "6 min read",
     category: "Design Guide",
     image: "/images/applications/Flooring.webp",
-    relatedStoneSlugs: ["statuario-marble", "carrara-white-marble", "silver-grey-marble", "bhaswara-white"],
+    relatedStoneSlugs: ["statuario-marble", "carrara-white-marble", "silver-grey-marble", "banswara-white"],
     sections: [
       {
         heading: "Finish Matters: Polished vs Honed",

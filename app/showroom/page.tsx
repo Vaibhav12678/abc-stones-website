@@ -17,7 +17,7 @@ export default function ShowroomPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: SITE_NAME,
-    image: "https://abcstonesindia.com/images/showroom/showroom-placeholder.jpg",
+    image: "https://abcstonesindia.com/images/showroom/showroom-facade.webp",
     telephone: PRIMARY_PHONE,
     address: {
       "@type": "PostalAddress",
@@ -148,7 +148,7 @@ export default function ShowroomPage() {
           <div className="lg:col-span-6 relative">
             <div className="relative aspect-[4/3] w-full overflow-hidden border border-charcoal/15 shadow-md">
               <Image
-                src="/images/showroom/showroom-placeholder.jpg"
+                src="/images/showroom/showroom-facade.webp"
                 alt={`${SITE_NAME} showroom in Kishangarh`}
                 fill
                 priority

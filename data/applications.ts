@@ -37,7 +37,7 @@ export const applications: ApplicationItem[] = [
       "statuario-marble",
       "carrara-white-marble",
       "silver-grey-marble",
-      "bhaswara-white",
+      "banswara-white",
       "s-white",
     ],
     designTips: [
@@ -188,7 +188,7 @@ export const applications: ApplicationItem[] = [
       "calacatta-gold-marble",
       "statuario-marble",
       "alaska-white",
-      "bhaswara-white",
+      "banswara-white",
     ],
     designTips: [
       "Coordinate stone selections between floors, accent walls, and custom furniture for unified flow.",
@@ -207,7 +207,7 @@ export const applications: ApplicationItem[] = [
     pairedStoneSlug: "s-white",
     recommendedStoneSlugs: [
       "s-white",
-      "bhaswara-white",
+      "banswara-white",
       "chima",
       "zirawal-white",
     ],
@@ -245,10 +245,10 @@ export const applications: ApplicationItem[] = [
     image: "/images/applications/Luxury House.webp",
     description:
       "Bespoke dining tables, executive conference desks, and sculptural coffee tables cut from monolithic slabs of marble or granite become heirloom centerpieces.",
-    pairedStoneName: "Bhaswara White",
-    pairedStoneSlug: "bhaswara-white",
+    pairedStoneName: "Banswara White",
+    pairedStoneSlug: "banswara-white",
     recommendedStoneSlugs: [
-      "bhaswara-white",
+      "banswara-white",
       "calacatta-gold-marble",
       "black-pearl",
       "carrara-white-marble",

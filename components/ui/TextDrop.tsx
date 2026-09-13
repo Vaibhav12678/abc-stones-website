@@ -15,14 +15,14 @@ export default function TextDrop({
   children,
   className = "",
   delay = 0,
-  duration = 0.75,
-  y = -45,
+  duration = 0.5,
+  y = 12,
 }: TextDropProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
+      viewport={{ once: true, amount: 0.05 }}
       transition={{
         duration,
         delay,

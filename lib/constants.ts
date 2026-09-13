@@ -21,7 +21,8 @@ export const ADDRESS_LINES = [
 ];
 
 // Google Maps business listing / direction link
-export const GOOGLE_MAPS_LINK = "https://share.google/9ExlLqKoX485JFPoB";
+export const GOOGLE_MAPS_LINK =
+  "https://www.google.com/maps/search/?api=1&query=ABC+STONES+INDIA+PVT+LTD%2C+MVQ8%2B55J%2C+Harmara+Rd%2C+Ralawata%2C+Rajasthan+305801";
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },

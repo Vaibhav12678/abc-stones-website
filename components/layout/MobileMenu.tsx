@@ -15,7 +15,7 @@ const popularStones = [
   { name: "Calacatta Gold Marble", href: "/collection/marble/calacatta-gold-marble" },
   { name: "Carrara White Marble", href: "/collection/marble/carrara-white-marble" },
   { name: "Silver Grey Marble", href: "/collection/marble/silver-grey-marble" },
-  { name: "Bhaswara White", href: "/collection/marble/bhaswara-white" },
+  { name: "Banswara White", href: "/collection/marble/banswara-white" },
   { name: "Black Pearl", href: "/collection/granite/black-pearl" },
   { name: "Alaska White", href: "/collection/granite/alaska-white" },
   { name: "Black Markino", href: "/collection/granite/black-markino" },

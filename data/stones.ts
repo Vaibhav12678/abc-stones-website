@@ -147,14 +147,14 @@ export const stones: Stone[] = [
     ],
   },
   {
-    slug: "bhaswara-white",
-    name: "Bhaswara White",
+    slug: "banswara-white",
+    name: "Banswara White",
     category: "marble",
     colors: ["White"],
     forms: ["Slab", "Block"],
     slabAvailable: true,
     blockAvailable: true,
-    image: "/images/marble/bhaswara-white.webp",
+    image: "/images/marble/banswara-white.webp",
     featured: true,
     description:
       "A pristine white natural marble showcasing clean crystalline texture and luminous light reflectivity. An enduring selection for grand floor expanses, custom table tops, and architectural surfaces.",
@@ -172,8 +172,8 @@ export const stones: Stone[] = [
     ],
     faqs: [
       {
-        question: "Can Bhaswara White be ordered in custom block dimensions?",
-        answer: "Yes, ABC STONES INDIA PVT. LTD. supplies Bhaswara White in both blocks and customized slab thicknesses.",
+        question: "Can Banswara White be ordered in custom block dimensions?",
+        answer: "Yes, ABC STONES INDIA PVT. LTD. supplies Banswara White in both blocks and customized slab thicknesses.",
       },
     ],
   },
@@ -438,7 +438,7 @@ export function getStoneBySlug(rawSlug: string): Stone | undefined {
     // support variations e.g. "statuario" vs "statuario-marble"
     if (s.slug.replace("-marble", "") === clean) return true;
     if (clean.replace("-marble", "") === s.slug.replace("-marble", "")) return true;
-    if (clean === "banswara-white" && s.slug === "bhaswara-white") return true;
+    if ((clean === "banswara-white" || clean === "bhaswara-white") && (s.slug === "banswara-white" || s.slug === "bhaswara-white")) return true;
     return false;
   });
 }

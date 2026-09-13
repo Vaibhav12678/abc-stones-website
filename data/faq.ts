@@ -12,7 +12,7 @@ export const generalFaqs: FaqItem[] = [
   {
     question: "Which marble is suitable for flooring?",
     answer:
-      "Statuario Marble, Carrara White Marble, Silver Grey Marble, and Bhaswara White are widely used for flooring in luxury residences and commercial spaces. For high-footfall areas, proper sealing and regular maintenance ensure enduring beauty. Honed finishes are also popular for enhanced slip resistance.",
+      "Statuario Marble, Carrara White Marble, Silver Grey Marble, and Banswara White are widely used for flooring in luxury residences and commercial spaces. For high-footfall areas, proper sealing and regular maintenance ensure enduring beauty. Honed finishes are also popular for enhanced slip resistance.",
   },
   {
     question: "Is Statuario Marble available in slabs?",
