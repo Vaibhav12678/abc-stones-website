@@ -128,20 +128,7 @@ export default function StoneRoutePage({
     redirect(getCanonicalStoneUrl(stone));
   }
 
-  // Structured Data Schema for Search Engines
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: `${stone.name} by ${SITE_NAME}`,
-    image: `https://www.abcstonesindia.com${stone.image}`,
-    description: stone.description || `${stone.name} premium natural stone`,
-    brand: {
-      "@type": "Brand",
-      name: SITE_NAME,
-    },
-    category: stone.category,
-  };
-
+  // Breadcrumb Structured Data Schema for Search Engines
   const breadcrumbLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -169,10 +156,6 @@ export default function StoneRoutePage({
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
