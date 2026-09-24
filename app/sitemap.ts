@@ -4,7 +4,7 @@ import { applications } from "@/data/applications";
 import { journalArticles } from "@/data/journal";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://abcstonesindia.com";
+  const baseUrl = "https://www.abcstonesindia.com";
 
   // Static routes
   const staticRoutes: MetadataRoute.Sitemap = [

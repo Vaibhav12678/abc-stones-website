@@ -50,9 +50,8 @@ export async function generateMetadata({
   if (!stone) return { title: `Stone Not Found | ${SITE_NAME}` };
 
   const title = `${stone.name} | ${SITE_NAME}`;
-  const description = `${stone.name} — Premium natural ${stone.category}${
-    stone.origin ? ` sourced from ${stone.origin}` : ""
-  }. Slab and block availability for luxury residences and commercial architecture by ${SITE_NAME}.`;
+  const description = `${stone.name} — Premium natural ${stone.category}${stone.origin ? ` sourced from ${stone.origin}` : ""
+    }. Slab and block availability for luxury residences and commercial architecture by ${SITE_NAME}.`;
 
   return {
     title,
@@ -98,7 +97,7 @@ export default function StoneRoutePage({
     "@context": "https://schema.org",
     "@type": "Product",
     name: `${stone.name} by ${SITE_NAME}`,
-    image: `https://abcstonesindia.com${stone.image}`,
+    image: `https://www.abcstonesindia.com${stone.image}`,
     description: stone.description || `${stone.name} premium natural stone`,
     brand: {
       "@type": "Brand",
@@ -121,19 +120,19 @@ export default function StoneRoutePage({
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://abcstonesindia.com",
+        item: "https://www.abcstonesindia.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: `${stone.category.charAt(0).toUpperCase() + stone.category.slice(1)} Collection`,
-        item: `https://abcstonesindia.com/collection?category=${stone.category}`,
+        item: `https://www.abcstonesindia.com/collection?category=${stone.category}`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: stone.name,
-        item: `https://abcstonesindia.com${getCanonicalStoneUrl(stone)}`,
+        item: `https://www.abcstonesindia.com${getCanonicalStoneUrl(stone)}`,
       },
     ],
   };
