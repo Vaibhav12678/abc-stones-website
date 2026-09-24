@@ -25,6 +25,9 @@ const body = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.abcstonesindia.com"),
+  alternates: {
+    canonical: "/",
+  },
   title: {
     default: `${SITE_NAME} | Premium Imported Marble & Granite`,
     template: `%s | ${SITE_NAME}`,
