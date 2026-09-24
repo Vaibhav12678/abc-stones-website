@@ -37,9 +37,38 @@ export async function generateMetadata({
 
   if (parts.length === 1 && (parts[0] === "marble" || parts[0] === "granite")) {
     const cat = parts[0];
+    const catTitle = cat === "marble" ? "Marble" : "Granite";
+    const title = `${catTitle} Collection | ${SITE_NAME}`;
+    const description = `Explore premium ${cat} from ${SITE_NAME} in Kishangarh, Ajmer. Available in slabs and blocks for luxury residential, hospitality, commercial and architectural projects.`;
+    const canonicalUrl = `https://www.abcstonesindia.com/collection/${cat}`;
+    const categoryStone = stones.find((s) => s.category === cat);
+    const categoryImage = categoryStone
+      ? categoryStone.image
+      : cat === "marble"
+      ? "/images/marble/statuario.webp"
+      : "/images/granite/black-pearl.webp";
+
     return {
-      title: `${cat.charAt(0).toUpperCase() + cat.slice(1)} Collection | ${SITE_NAME}`,
-      description: `Explore premium ${cat} from ${SITE_NAME}. Available in slabs and blocks for luxury projects.`,
+      title,
+      description,
+      alternates: {
+        canonical: `/collection/${cat}`,
+      },
+      openGraph: {
+        title,
+        description,
+        url: canonicalUrl,
+        siteName: SITE_NAME,
+        type: "website",
+        images: [
+          {
+            url: categoryImage,
+            width: 1200,
+            height: 630,
+            alt: `${catTitle} Collection | ${SITE_NAME}`,
+          },
+        ],
+      },
     };
   }
 
@@ -50,23 +79,30 @@ export async function generateMetadata({
   if (!stone) return { title: `Stone Not Found | ${SITE_NAME}` };
 
   const title = `${stone.name} | ${SITE_NAME}`;
-  const description = `${stone.name} — Premium natural ${stone.category}${stone.origin ? ` sourced from ${stone.origin}` : ""
-    }. Slab and block availability for luxury residences and commercial architecture by ${SITE_NAME}.`;
+  const originPart = stone.origin ? ` sourced from ${stone.origin}` : "";
+  const description = `${stone.name} — premium natural ${stone.category}${originPart} by ${SITE_NAME}. Available in slabs and blocks for luxury residential, hospitality, commercial and architectural projects.`;
+  const canonicalUrl = `https://www.abcstonesindia.com${getCanonicalStoneUrl(stone)}`;
 
   return {
     title,
     description,
+    alternates: {
+      canonical: getCanonicalStoneUrl(stone),
+    },
     openGraph: {
       title,
       description,
+      url: canonicalUrl,
+      siteName: SITE_NAME,
+      type: "website",
       images: [
         {
           url: stone.image,
-          alt: `${stone.name} natural stone slab`,
+          width: 1200,
+          height: 630,
+          alt: `${stone.name} ${stone.category} stone`,
         },
       ],
-      siteName: SITE_NAME,
-      type: "website",
     },
   };
 }
@@ -104,12 +140,6 @@ export default function StoneRoutePage({
       name: SITE_NAME,
     },
     category: stone.category,
-    offers: {
-      "@type": "AggregateOffer",
-      priceCurrency: "INR",
-      price: "Price on Enquiry",
-      availability: "https://schema.org/InStock",
-    },
   };
 
   const breadcrumbLd = {
