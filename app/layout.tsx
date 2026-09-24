@@ -24,7 +24,7 @@ const body = Manrope({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://abcstonesindia.com"),
+  metadataBase: new URL("https://www.abcstonesindia.com"),
   title: {
     default: `${SITE_NAME} | Premium Imported Marble & Granite`,
     template: `%s | ${SITE_NAME}`,
@@ -35,6 +35,14 @@ export const metadata: Metadata = {
     description: `Discover premium imported marble, granite and natural stone from ${SITE_NAME}. Over 30 years of industry experience.`,
     siteName: SITE_NAME,
     type: "website",
+    images: [
+      {
+        url: "/public/logo/logo.webp",
+        width: 1200,
+        height: 630,
+        alt: "ABC STONES INDIA PVT. LTD. - Premium Marble and Granite",
+      },
+    ]
   },
 };
 
